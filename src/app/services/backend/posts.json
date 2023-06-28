@@ -1,0 +1,11 @@
+{
+  "posts":[
+    {
+      "id": 1,
+      "user": "ale-costa",
+      "title": "title of post",
+      "postContent":"content",
+      "subtitle":"subtitle"
+    }
+  ]
+}
