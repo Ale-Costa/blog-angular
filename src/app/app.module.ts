@@ -10,22 +10,43 @@ import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { HeaderComponent } from './components/template/header/header.component';
 import { HttpClientModule } from '@angular/common/http';
+import { MatCardModule } from '@angular/material/card';
+import { MatDialogModule } from '@angular/material/dialog';
+import { NewPostCardComponent } from './components/template/new-post-card/new-post-card.component';
+import { MatFormFieldModule } from '@angular/material/form-field';
+import { MatInputModule } from '@angular/material/input';
+import { NewPostFormComponent } from './components/template/new-post-form/new-post-form.component';
+import { FormsModule } from '@angular/forms';
+import { NewPostActionsComponent } from './components/template/new-post-actions/new-post-actions.component';
+import { PostsComponent } from './components/views/posts/posts.component';
+import { PostsButtonComponent } from './components/views/posts/posts-button/posts-button.component';
+
 
 @NgModule({
   declarations: [
     AppComponent,
-    HeaderComponent
+    HeaderComponent,
+    NewPostCardComponent,
+    NewPostFormComponent,
+    NewPostActionsComponent,
+    PostsComponent,
+    PostsButtonComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
     HttpClientModule,
+    MatCardModule,
+    MatDialogModule,
     MatToolbarModule,
     MatMenuModule,
     MatIconModule,
+    MatFormFieldModule,
+    MatInputModule,
     MatButtonModule,
-    MatSnackBarModule
+    MatSnackBarModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
