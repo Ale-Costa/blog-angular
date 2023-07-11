@@ -20,6 +20,12 @@ import { FormsModule } from '@angular/forms';
 import { NewPostActionsComponent } from './components/template/new-post-actions/new-post-actions.component';
 import { PostsComponent } from './components/views/posts/posts.component';
 import { PostsButtonComponent } from './components/views/posts/posts-button/posts-button.component';
+import { AboutComponent } from './components/template/about/about.component';
+import { MatSidenavModule } from '@angular/material/sidenav';
+import { MatListModule } from '@angular/material/list';
+import { SidenavInfoComponent } from './components/template/sidenav-info/sidenav-info.component';
+
+
 
 
 @NgModule({
@@ -31,6 +37,8 @@ import { PostsButtonComponent } from './components/views/posts/posts-button/post
     NewPostActionsComponent,
     PostsComponent,
     PostsButtonComponent,
+    AboutComponent,
+    SidenavInfoComponent,
   ],
   imports: [
     BrowserModule,
@@ -46,7 +54,9 @@ import { PostsButtonComponent } from './components/views/posts/posts-button/post
     MatInputModule,
     MatButtonModule,
     MatSnackBarModule,
-    FormsModule
+    FormsModule,
+    MatSidenavModule,
+    MatListModule
   ],
   providers: [],
   bootstrap: [AppComponent]

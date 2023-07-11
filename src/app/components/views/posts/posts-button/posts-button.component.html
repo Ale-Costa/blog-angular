@@ -2,7 +2,7 @@
   <i class="material-icons"> {{ liked ? 'favorite' : 'favorite_border' }}</i>
 </button>
 <button mat-icon-button [color]="liked ? 'primary' : ''" (click)="unlike()">
-  <i class="{{ unliked ? 'material-icons' : 'material-icons-outlined' }}">
-    {{ liked ? 'favorite' : 'favorite_border' }}</i
+  <i [class]="unliked ? 'material-icons' : 'material-icons-outlined'"
+    >thumb_down</i
   >
 </button>

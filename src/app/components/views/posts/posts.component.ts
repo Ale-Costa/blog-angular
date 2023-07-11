@@ -3,6 +3,7 @@ import { MatDialog } from '@angular/material/dialog';
 import { Observable } from 'rxjs';
 import { PostService } from 'src/app/services/post.service';
 import { Post } from '../../template/new-post-form/new-post.model';
+import { NewPostFormComponent } from '../../template/new-post-form/new-post-form.component';
 
 @Component({
   selector: 'app-posts',
@@ -28,7 +29,7 @@ export class PostsComponent implements OnInit {
     }
 
     update(post:Post){
+      this.matDialog.open(NewPostFormComponent,{data:post})
       this.postService.setPost(post)
-     // this.matDialog.open(EditPostFormComponent)
     }
 }
